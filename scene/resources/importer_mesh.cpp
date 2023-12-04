@@ -1368,6 +1368,9 @@ void ImporterMesh::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("get_mesh", "base_mesh"), &ImporterMesh::get_mesh, DEFVAL(Ref<ArrayMesh>()));
 	ClassDB::bind_method(D_METHOD("clear"), &ImporterMesh::clear);
 
+	ClassDB::bind_method(D_METHOD("create_shadow_mesh"), &ImporterMesh::create_shadow_mesh);
+	ClassDB::bind_method(D_METHOD("get_shadow_mesh"), &ImporterMesh::get_shadow_mesh);
+
 	ClassDB::bind_method(D_METHOD("_set_data", "data"), &ImporterMesh::_set_data);
 	ClassDB::bind_method(D_METHOD("_get_data"), &ImporterMesh::_get_data);
 
